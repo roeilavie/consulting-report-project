@@ -22,6 +22,7 @@ export const generateReport = async (
     );
     res.status(200).json({ reportMarkdown });
   } catch (error) {
+    console.error(error);
     res.status(500).json({
       reportMarkdown: '',
       error: 'Failed to generate report',
