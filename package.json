@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "dev": "concurrently --raw \"npm run dev -w public\" \"npm run dev -w server\"",
-    "build": "npm run build -w public && npm run build -w server",
+    "build": "npm run build",
     "start": "npm run start -w server"
   },
   "devDependencies": {
